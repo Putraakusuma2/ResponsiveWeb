@@ -1,12 +1,11 @@
-/*setting dasar*/
-*{
+/* Reset dan pengaturan dasar */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/*style background*/
 body {
   background: url('images/background-bg.jpg') no-repeat center center fixed;
   background-size: cover;
@@ -14,16 +13,20 @@ body {
   line-height: 1.6;
 }
 
-/*style header*/
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header */
 .header {
-  position: fixed; 
-  top: 0; 
+  position: fixed;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 90%; 
-  z-index: 1000; 
+  width: 90%;
+  z-index: 1000;
   background: rgba(255, 255, 255, 0.836);
-  backdrop-filter: blur(1px); 
+  backdrop-filter: blur(1px);
   border-radius: 15px;
   margin-top: 16px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -37,7 +40,7 @@ body {
   font-size: 28.8px;
 }
 
-/*style nagigasi */
+/* Navigasi */
 nav ul {
   list-style: none;
   display: flex;
@@ -48,36 +51,42 @@ nav a {
   color: #333;
   text-decoration: none;
   font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
 }
 
-/*style banner */
+nav a:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* Banner */
 .banner {
   position: relative;
-  height: 100vh; 
-  top: 100px; 
+  height: 100vh;
+  top: 100px;
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
 }
 
 .banner-img {
   width: 100%;
   height: 80%;
-  object-fit: cover; 
+  object-fit: cover;
   position: absolute;
   border-radius: 15px;
   top: 0;
   left: 0;
   z-index: -1;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin: 16px 0;
 }
 
 .text-overlay {
   position: absolute;
   top: 40%;
   left: 50%;
-  transform: translate(-50%, -40%); 
+  transform: translate(-50%, -40%);
   color: white;
   text-align: center;
   padding: 16px;
@@ -87,18 +96,18 @@ nav a {
   font-size: 32px;
 }
 
-/*style bagian intro */
+/* Glass Effect */
 .glass {
   background: rgba(252, 229, 229, 0.733);
   backdrop-filter: blur(10px);
   border-radius: 15px;
-  margin: 32px auto; 
+  margin: 32px auto;
   padding: 32px;
   max-width: 90%;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
-/*style* about dan project */
+/* Grid Layout */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -116,16 +125,16 @@ nav a {
   margin-bottom: 8px;
 }
 
-/*gambar project*/
+/* Gambar Proyek */
 .project-img {
-  width: 100%; 
-  height: auto; 
-  object-fit: cover; 
-  border-radius: 10px; 
-  margin-bottom: 16px; 
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 16px;
 }
 
-/*style footer */
+/* Footer */
 .footer {
   text-align: center;
   padding: 16px;
@@ -134,51 +143,60 @@ nav a {
   margin-top: 32px;
 }
 
-/* Media query untuk layar dengan lebar maksimum 768px*/
+/* Media Query untuk layar dengan lebar maksimum 768px */
 @media (max-width: 768px) {
   .header {
-    flex-direction: row; 
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 16px;
+    flex-direction: column; /* Header menjadi vertikal */
+    align-items: center; /* Pusatkan elemen di dalam header */
+    text-align: center; /* Pusatkan teks */
   }
 
   .header h1 {
-    font-size: 24px;
-    margin-bottom: 0; 
+    margin-bottom: 8px; /* Tambahkan jarak bawah untuk memisahkan dari menu */
   }
 
-  nav ul {
-    flex-direction: column;
+  .nav-menu {
+    display: flex;
+    width: 100%;
+    margin-top: 8px;
+    justify-content: center; /* Pusatkan menu navigasi */
+    gap: 8px;
+  }
+
+  .nav-menu ul {
+    display: flex;
     gap: 8px;
   }
 
   .banner {
-    height: 50vh;
-    margin-bottom: 24px; 
+    margin-top: 64px; /* Tambahkan jarak antara header dan banner */
+    height: 50vh; /* Kurangi tinggi banner untuk layar kecil */
+    margin-top: 64px;
   }
 
   .banner-img {
-    height: 80%; 
-    object-fit: cover; 
-    border-radius: 10px; 
+    height: 80%; /* Gambar tetap proporsional */
+    border-radius: 10px; /* Kurangi radius sudut */
   }
 
   .text-overlay {
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -35%); 
-    padding: 12px; 
+    top: 40%; /* Sesuaikan posisi teks lebih rendah */
+    transform: translate(-50%, -40%); /* Pusatkan teks */
+    padding: 10px; /* Kurangi padding untuk layar kecil */
+    font-size: 14px; /* Ukuran teks lebih kecil */
   }
 
   .text-overlay h2 {
-    font-size: 24px; 
+    font-size: 24px; /* Ukuran teks judul lebih kecil */
+  }
+
+  .text-overlay p {
+    font-size: 14px; /* Ukuran teks deskripsi lebih kecil */
   }
 
   .glass {
-    margin-top: 24px auto; 
-    padding: 16px; 
+    margin-top: 32px;
+    padding: 16px;
   }
 
   .grid-container {
@@ -193,45 +211,42 @@ nav a {
   .footer {
     font-size: 14.4px;
   }
-
-  .burger-menu {
-    display: flex;
-    margin-left: 0; 
-  }
 }
 
-/* Media query untuk layar dengan lebar maksimum 480px*/
+/* Media Query untuk layar dengan lebar maksimum 480px */
 @media (max-width: 480px) {
   .header h1 {
     font-size: 19.2px;
   }
 
   .banner {
-    height: 40vh; 
-    margin-bottom: 16px; 
+    margin-top: 48px; /* Tambahkan lebih banyak jarak untuk layar kecil */
+    height: 40vh; /* Kurangi tinggi banner lebih jauh */
   }
 
   .banner-img {
-    height: 70%; 
-    object-fit: cover;
-    border-radius: 8px; 
+    height: 70%; /* Gambar tetap proporsional */
+    border-radius: 8px; /* Kurangi radius sudut lebih jauh */
   }
 
   .text-overlay {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -30%); 
-    padding: 8px; 
+    top: 35%; /* Sesuaikan posisi teks lebih rendah */
+    transform: translate(-50%, -35%); /* Pusatkan teks */
+    padding: 8px; /* Kurangi padding lebih jauh */
+    font-size: 12px; /* Ukuran teks lebih kecil */
   }
 
   .text-overlay h2 {
-    font-size: 20px; 
+    font-size: 20px; /* Ukuran teks judul lebih kecil */
+  }
+
+  .text-overlay p {
+    font-size: 12px; /* Ukuran teks deskripsi lebih kecil */
   }
 
   .glass {
-    margin-top: 16px auto; 
-    padding: 12px; 
+    margin-top: 32px;
+    padding: 12px;
   }
 
   .footer {
@@ -239,81 +254,3 @@ nav a {
   }
 }
 
-/*style burger menu */
-.menu-toggle {
-  display: none;
-}
-
-.burger-menu {
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 20px;
-  cursor: pointer;
-  z-index: 1001;
-}
-
-.burger-menu span {
-  display: block;
-  background: #333;
-  height: 3px;
-  border-radius: 2px;
-  transition: all 0.3s ease;
-}
-
-/* Navigasi */
-.nav-menu {
-  display: flex;
-  z-index: 10; 
-}
-
-.nav-menu ul {
-  display: flex;
-  list-style: none;
-  gap: 16px;
-}
-
-.nav-menu ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
-
-/* Responsive Burger */
-@media (max-width: 768px) {
-  .burger-menu {
-    display: flex;
-    margin-left: auto;
-  }
-
-  .nav-menu {
-    display: none;
-    flex-direction: column;
-    background: rgba(255, 255, 255, 0.95);
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    border-radius: 10px;
-    margin-top: 16px;
-    padding: 16px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .menu-toggle:checked ~ .nav-menu {
-    display: flex;
-  }
-
-  .menu-toggle:checked + .burger-menu span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-
-  .menu-toggle:checked + .burger-menu span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .menu-toggle:checked + .burger-menu span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-  }
-}

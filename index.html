@@ -11,27 +11,18 @@
   <!-- Header dengan navigasi responsif -->
   <header class="header">
     <h1>Personal Portofolio</h1>
-    <!-- Burger menu menggunakan checkbox-->
-    <input type="checkbox" id="menu-toggle" class="menu-toggle">
-    <label for="menu-toggle" class="burger-menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
     <!-- Navigasi Utama -->
     <nav class="nav-menu" aria-label="Main Navigation">
       <ul>
-        <li><label for="menu-toggle"><a href="#home">Home</a></label></li>
-        <li><label for="menu-toggle"><a href="#about">About</a></label></li>
-        <li><label for="menu-toggle"><a href="#project">Project</a></label></li>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#project">Project</a>
       </ul>
     </nav>
   </header>
   <!-- Bagian banner -->
   <section id="home" class="banner">
-    <picture>
       <img src="images/banner-bg.jpg" alt="Banner Profil" class="banner-img">
-    </picture>
     <div class="text-overlay">
       <h2>Web Developer & UX/UI Designer</h2>
       <p>Saya membangun pengalaman web modern yang responsif dan ramah pengguna.</p>
@@ -43,6 +34,7 @@
     <p>Saya Muhammad Luthfi Kusuma Putra, Mahasiswa Informatika dari Universitas Teknologi Digital Indonesia (225410068 - Informatika 2).</p>
     <p>Fokus saya adalah membangun website yang estetis, cepat, dan aksesibel.</p>
   </section>
+  
   <!-- Bagian tentang about -->
   <section id="about" class="grid-container glass">
     <div class="card">
@@ -59,16 +51,12 @@
   <section id="project" class="grid-container glass">
     <div class="card">
       <h3>KRSJAWA III</h3>
-      <picture>
         <img src="images/krsjawa.jpg" alt="KRSJAWA III" class="project-img">
-      </picture>
       <p>Membuat tampilan pemetaan pada website KRSJAWA III milik Klinik Rumah Swadaya Kementrian PUPR.</p>
     </div>
     <div class="card">
       <h3>ANDARI</h3>
-      <picture>
         <img src="images/andari.jpg" alt="ANDARI" class="project-img">
-      </picture>
       <p>Mendesain UI/UX pada ANDARI. Membuat desain yang mudah dioperasikan oleh user dan memiliki tampilan yang menarik.</p>
     </div>
   </section>
