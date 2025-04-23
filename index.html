@@ -25,7 +25,11 @@
   </header>
 
   <section id="home" class="banner">
-    <img src="images/banner-bg.jpg" alt="Banner Profil" class="banner-img">
+    <picture>
+      <source srcset="images/banner-bg.jpg" media="(min-width: 768px)">
+      <source srcset="images/banner-bg.jpg" media="(max-width: 768px)">
+      <img src="images/banner-bg.jpg" alt="Banner Profil" class="banner-img">
+    </picture>
     <div class="text-overlay">
       <h2>Web Developer & UX/UI Designer</h2>
       <p>Saya membangun pengalaman web modern yang responsif dan ramah pengguna.</p>
@@ -52,13 +56,21 @@
   <section id="project" class="grid-container glass">
     <div class="card">
       <h3>KRSJAWA III</h3>
-      <img src="images/krsjawa.jpg" alt="KRSJAWA III" class="project-img">
-      <p>membuat tampilan pemetaan pada website KRSJAWA III milik Klinik Rumah Swadaya Kementrian PUPR</p>
+      <picture>
+        <source srcset="images/krsjawa.jpg" media="(min-width: 768px)">
+        <source srcset="images/krsjawa.jpg" media="(max-width: 768px)">
+        <img src="images/krsjawa.jpg" alt="KRSJAWA III" class="project-img">
+      </picture>
+      <p>Membuat tampilan pemetaan pada website KRSJAWA III milik Klinik Rumah Swadaya Kementrian PUPR.</p>
     </div>
     <div class="card">
       <h3>ANDARI</h3>
-      <img src="images/andari.jpg" alt="ANDARI" class="project-img">
-      <p>Mendesain UI/UX pada ANDARI.membuat desain yang mudah di operasikan oleh user dan memiliki tampilan yang menarik  </p>
+      <picture>
+        <source srcset="images/andari.jpg" media="(min-width: 768px)">
+        <source srcset="images/andari.jpg" media="(max-width: 768px)">
+        <img src="images/andari.jpg" alt="ANDARI" class="project-img">
+      </picture>
+      <p>Mendesain UI/UX pada ANDARI. Membuat desain yang mudah dioperasikan oleh user dan memiliki tampilan yang menarik.</p>
     </div>
   </section>
 
