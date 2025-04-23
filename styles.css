@@ -134,6 +134,39 @@ nav a:hover {
   margin-bottom: 16px;
 }
 
+/* Bagian kontak */
+#contact {
+  text-align: center;
+  padding: 32px;
+  margin-top: 32px;
+}
+
+#contact h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center; 
+  gap: 16px; 
+  margin-top: 16px;
+}
+
+.contact-icons a {
+  text-decoration: none; 
+}
+
+.contact-icons img {
+  width: 40px; 
+  height: 40px; 
+  transition: transform 0.3s ease; 
+}
+
+.contact-icons img:hover {
+  transform: scale(1.2); 
+}
+
 /* Footer */
 .footer {
   text-align: center;
@@ -146,20 +179,20 @@ nav a:hover {
 /* Media Query untuk layar dengan lebar maksimum 768px */
 @media (max-width: 768px) {
   .header {
-    flex-direction: column; /* Header menjadi vertikal */
-    align-items: center; /* Pusatkan elemen di dalam header */
-    text-align: center; /* Pusatkan teks */
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
   }
 
   .header h1 {
-    margin-bottom: 8px; /* Tambahkan jarak bawah untuk memisahkan dari menu */
+    margin-bottom: 8px; 
   }
 
   .nav-menu {
     display: flex;
     width: 100%;
     margin-top: 8px;
-    justify-content: center; /* Pusatkan menu navigasi */
+    justify-content: center; 
     gap: 8px;
   }
 
@@ -169,29 +202,29 @@ nav a:hover {
   }
 
   .banner {
-    margin-top: 64px; /* Tambahkan jarak antara header dan banner */
-    height: 50vh; /* Kurangi tinggi banner untuk layar kecil */
+    margin-top: 64px; 
+    height: 50vh; 
     margin-top: 64px;
   }
 
   .banner-img {
-    height: 80%; /* Gambar tetap proporsional */
-    border-radius: 10px; /* Kurangi radius sudut */
+    height: 80%; 
+    border-radius: 10px; 
   }
 
   .text-overlay {
-    top: 40%; /* Sesuaikan posisi teks lebih rendah */
-    transform: translate(-50%, -40%); /* Pusatkan teks */
-    padding: 10px; /* Kurangi padding untuk layar kecil */
-    font-size: 14px; /* Ukuran teks lebih kecil */
+    top: 40%; 
+    transform: translate(-50%, -40%); 
+    padding: 10px; 
+    font-size: 14px; 
   }
 
   .text-overlay h2 {
-    font-size: 24px; /* Ukuran teks judul lebih kecil */
+    font-size: 24px; 
   }
 
   .text-overlay p {
-    font-size: 14px; /* Ukuran teks deskripsi lebih kecil */
+    font-size: 14px; 
   }
 
   .glass {
@@ -220,28 +253,28 @@ nav a:hover {
   }
 
   .banner {
-    margin-top: 48px; /* Tambahkan lebih banyak jarak untuk layar kecil */
-    height: 40vh; /* Kurangi tinggi banner lebih jauh */
+    margin-top: 48px; 
+    height: 40vh; 
   }
 
   .banner-img {
-    height: 70%; /* Gambar tetap proporsional */
-    border-radius: 8px; /* Kurangi radius sudut lebih jauh */
+    height: 70%; 
+    border-radius: 8px; 
   }
 
   .text-overlay {
-    top: 35%; /* Sesuaikan posisi teks lebih rendah */
-    transform: translate(-50%, -35%); /* Pusatkan teks */
-    padding: 8px; /* Kurangi padding lebih jauh */
-    font-size: 12px; /* Ukuran teks lebih kecil */
+    top: 35%; 
+    transform: translate(-50%, -35%);
+    padding: 8px; 
+    font-size: 12px; 
   }
 
   .text-overlay h2 {
-    font-size: 20px; /* Ukuran teks judul lebih kecil */
+    font-size: 20px; 
   }
 
   .text-overlay p {
-    font-size: 12px; /* Ukuran teks deskripsi lebih kecil */
+    font-size: 12px; 
   }
 
   .glass {
