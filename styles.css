@@ -1,10 +1,12 @@
-* {
+/*setting dasar*/
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/*style background*/
 body {
   background: url('images/background-bg.jpg') no-repeat center center fixed;
   background-size: cover;
@@ -12,6 +14,7 @@ body {
   line-height: 1.6;
 }
 
+/*style header*/
 .header {
   position: fixed; 
   top: 0; 
@@ -34,6 +37,7 @@ body {
   font-size: 28.8px;
 }
 
+/*style nagigasi */
 nav ul {
   list-style: none;
   display: flex;
@@ -46,6 +50,7 @@ nav a {
   font-weight: bold;
 }
 
+/*style banner */
 .banner {
   position: relative;
   height: 100vh; 
@@ -82,16 +87,18 @@ nav a {
   font-size: 32px;
 }
 
+/*style bagian intro */
 .glass {
   background: rgba(252, 229, 229, 0.733);
   backdrop-filter: blur(10px);
   border-radius: 15px;
-  margin: 32px auto; /* Jarak atas dan bawah */
+  margin: 32px auto; 
   padding: 32px;
   max-width: 90%;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
+/*style* about dan project */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -118,6 +125,7 @@ nav a {
   margin-bottom: 16px; 
 }
 
+/*style footer */
 .footer {
   text-align: center;
   padding: 16px;
@@ -126,7 +134,7 @@ nav a {
   margin-top: 32px;
 }
 
-/* Media query untuk layar dengan lebar maksimum 768px (tablet dan mobile) */
+/* Media query untuk layar dengan lebar maksimum 768px*/
 @media (max-width: 768px) {
   .header {
     flex-direction: row; 
@@ -137,7 +145,7 @@ nav a {
 
   .header h1 {
     font-size: 24px;
-    margin-bottom: 0; /* Hilangkan margin bawah */
+    margin-bottom: 0; 
   }
 
   nav ul {
@@ -146,14 +154,14 @@ nav a {
   }
 
   .banner {
-    height: 50vh; /* Kurangi tinggi banner */
-    margin-bottom: 24px; /* Tambahkan jarak di bawah banner */
+    height: 50vh;
+    margin-bottom: 24px; 
   }
 
   .banner-img {
-    height: 80%; /* Gambar menyesuaikan tinggi banner */
-    object-fit: cover; /* Pastikan gambar tetap proporsional */
-    border-radius: 10px; /* Kurangi radius sudut untuk layar kecil */
+    height: 80%; 
+    object-fit: cover; 
+    border-radius: 10px; 
   }
 
   .text-overlay {
@@ -161,16 +169,16 @@ nav a {
   top: 35%;
   left: 50%;
   transform: translate(-50%, -35%); 
-    padding: 12px; /* Kurangi padding teks */
+    padding: 12px; 
   }
 
   .text-overlay h2 {
-    font-size: 24px; /* Ukuran teks lebih kecil */
+    font-size: 24px; 
   }
 
   .glass {
-    margin-top: 24px auto; /* Jarak atas dan bawah untuk elemen glass */
-    padding: 16px; /* Kurangi padding untuk layar kecil */
+    margin-top: 24px auto; 
+    padding: 16px; 
   }
 
   .grid-container {
@@ -192,21 +200,21 @@ nav a {
   }
 }
 
-/* Media query untuk layar dengan lebar maksimum 480px (mobile kecil) */
+/* Media query untuk layar dengan lebar maksimum 480px*/
 @media (max-width: 480px) {
   .header h1 {
     font-size: 19.2px;
   }
 
   .banner {
-    height: 40vh; /* Kurangi tinggi banner lebih jauh */
-    margin-bottom: 16px; /* Tambahkan jarak di bawah banner */
+    height: 40vh; 
+    margin-bottom: 16px; 
   }
 
   .banner-img {
-    height: 70%; /* Gambar tetap menyesuaikan tinggi banner */
-    object-fit: cover; /* Pastikan gambar tetap proporsional */
-    border-radius: 8px; /* Kurangi radius sudut lebih jauh */
+    height: 70%; 
+    object-fit: cover;
+    border-radius: 8px; 
   }
 
   .text-overlay {
@@ -214,16 +222,16 @@ nav a {
   top: 30%;
   left: 50%;
   transform: translate(-50%, -30%); 
-    padding: 8px; /* Kurangi padding teks lebih jauh */
+    padding: 8px; 
   }
 
   .text-overlay h2 {
-    font-size: 20px; /* Ukuran teks lebih kecil */
+    font-size: 20px; 
   }
 
   .glass {
-    margin-top: 16px auto; /* Jarak atas dan bawah lebih kecil */
-    padding: 12px; /* Kurangi padding lebih jauh */
+    margin-top: 16px auto; 
+    padding: 12px; 
   }
 
   .footer {
@@ -231,7 +239,7 @@ nav a {
   }
 }
 
-/*burger menu */
+/*style burger menu */
 .menu-toggle {
   display: none;
 }
