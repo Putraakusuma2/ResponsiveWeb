@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: url('images/background-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  line-height: 1.6;
+}
+
+.header {
+  position: fixed; 
+  top: 0; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%; 
+  z-index: 1000; 
+  background: rgba(255, 255, 255, 0.836);
+  backdrop-filter: blur(1px); 
+  border-radius: 15px;
+  margin-top: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 28.8px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.banner {
+  position: relative;
+  height: 100vh; 
+  top: 100px; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.banner-img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover; 
+  position: absolute;
+  border-radius: 15px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%); 
+  color: white;
+  text-align: center;
+  padding: 16px;
+}
+
+.text-overlay h2 {
+  font-size: 32px;
+}
+
+.glass {
+  background: rgba(252, 229, 229, 0.733);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  margin: 32px auto; /* Jarak atas dan bawah */
+  padding: 32px;
+  max-width: 90%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-bottom: 8px;
+}
+
+/*gambar project*/
+.project-img {
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 10px 10px 0 0; 
+  margin-bottom: 16px; 
+}
+
+.footer {
+  text-align: center;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  margin-top: 32px;
+}
+
+/* Media query untuk layar dengan lebar maksimum 768px (tablet dan mobile) */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 16px;
+  }
+
+  .header h1 {
+    font-size: 24px;
+    margin-bottom: 0; /* Hilangkan margin bawah */
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .banner {
+    height: 50vh; /* Kurangi tinggi banner */
+    margin-bottom: 24px; /* Tambahkan jarak di bawah banner */
+  }
+
+  .banner-img {
+    height: 80%; /* Gambar menyesuaikan tinggi banner */
+    object-fit: cover; /* Pastikan gambar tetap proporsional */
+    border-radius: 10px; /* Kurangi radius sudut untuk layar kecil */
+  }
+
+  .text-overlay {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -35%); 
+    padding: 12px; /* Kurangi padding teks */
+  }
+
+  .text-overlay h2 {
+    font-size: 24px; /* Ukuran teks lebih kecil */
+  }
+
+  .glass {
+    margin-top: 24px auto; /* Jarak atas dan bawah untuk elemen glass */
+    padding: 16px; /* Kurangi padding untuk layar kecil */
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .card {
+    padding: 8px;
+  }
+
+  .footer {
+    font-size: 14.4px;
+  }
+
+  .burger-menu {
+    display: flex;
+    margin-left: 0; 
+  }
+}
+
+/* Media query untuk layar dengan lebar maksimum 480px (mobile kecil) */
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 19.2px;
+  }
+
+  .banner {
+    height: 40vh; /* Kurangi tinggi banner lebih jauh */
+    margin-bottom: 16px; /* Tambahkan jarak di bawah banner */
+  }
+
+  .banner-img {
+    height: 70%; /* Gambar tetap menyesuaikan tinggi banner */
+    object-fit: cover; /* Pastikan gambar tetap proporsional */
+    border-radius: 8px; /* Kurangi radius sudut lebih jauh */
+  }
+
+  .text-overlay {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%); 
+    padding: 8px; /* Kurangi padding teks lebih jauh */
+  }
+
+  .text-overlay h2 {
+    font-size: 20px; /* Ukuran teks lebih kecil */
+  }
+
+  .glass {
+    margin-top: 16px auto; /* Jarak atas dan bawah lebih kecil */
+    padding: 12px; /* Kurangi padding lebih jauh */
+  }
+
+  .footer {
+    font-size: 12.8px;
+  }
+}
+
+/*burger menu */
+.menu-toggle {
+  display: none;
+}
+
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.burger-menu span {
+  display: block;
+  background: #333;
+  height: 3px;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Navigasi */
+.nav-menu {
+  display: flex;
+  z-index: 10; 
+}
+
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Responsive Burger */
+@media (max-width: 768px) {
+  .burger-menu {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 16px;
+    padding: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu-toggle:checked ~ .nav-menu {
+    display: flex;
+  }
+
+  .menu-toggle:checked + .burger-menu span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .menu-toggle:checked + .burger-menu span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle:checked + .burger-menu span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portofolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Personal Portofolio</h1>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="burger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav class="nav-menu" aria-label="Main Navigation">
+      <ul>
+        <li><label for="menu-toggle"><a href="#home">Home</a></label></li>
+        <li><label for="menu-toggle"><a href="#about">About</a></label></li>
+        <li><label for="menu-toggle"><a href="#project">Project</a></label></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="banner">
+    <picture>
+      <source srcset="images/banner-bg.jpg" media="(min-width: 768px)">
+      <source srcset="images/banner-bg.jpg" media="(max-width: 768px)">
+      <img src="images/banner-bg.jpg" alt="Banner Profil" class="banner-img">
+    </picture>
+    <div class="text-overlay">
+      <h2>Web Developer & UX/UI Designer</h2>
+      <p>Saya membangun pengalaman web modern yang responsif dan ramah pengguna.</p>
+    </div>
+  </section>
+
+  <section id="intro" class="glass">
+    <h2>Selamat Datang</h2>
+    <p>Saya Muhammad Luthfi Kusuma Putra, Mahasiswa Informatika dari Universitas Teknologi Digital Indonesia (225410068 - Informatika 2).</p>
+    <p>Fokus saya adalah membangun website yang estetis, cepat, dan aksesibel.</p>
+  </section>
+
+  <section id="about" class="grid-container glass">
+    <div class="card">
+      <h3>Responsive Design</h3>
+      <p>Menggunakan CSS Grid dan media query untuk tampilan fleksibel di semua ukuran layar.</p>
+    </div>
+    <div class="card">
+      <h3>HTML & CSS</h3>
+      <p>Membangun struktur dan gaya web menggunakan HTML5 dan CSS3 murni.</p>
+    </div>
+  </section>
+
+  <section id="project" class="grid-container glass">
+    <div class="card">
+      <h3>KRSJAWA III</h3>
+      <picture>
+        <source srcset="images/krsjawa.jpg" media="(min-width: 768px)">
+        <source srcset="images/krsjawa.jpg" media="(max-width: 768px)">
+        <img src="images/krsjawa.jpg" alt="KRSJAWA III" class="project-img">
+      </picture>
+      <p>Membuat tampilan pemetaan pada website KRSJAWA III milik Klinik Rumah Swadaya Kementrian PUPR.</p>
+    </div>
+    <div class="card">
+      <h3>ANDARI</h3>
+      <picture>
+        <source srcset="images/andari.jpg" media="(min-width: 768px)">
+        <source srcset="images/andari.jpg" media="(max-width: 768px)">
+        <img src="images/andari.jpg" alt="ANDARI" class="project-img">
+      </picture>
+      <p>Mendesain UI/UX pada ANDARI. Membuat desain yang mudah dioperasikan oleh user dan memiliki tampilan yang menarik.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Muhammad Luthfi Kusuma Putra</p>
+  </footer>
+</body>
+</html>
