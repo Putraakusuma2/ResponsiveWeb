@@ -19,7 +19,7 @@ body {
   transform: translateX(-50%);
   width: 90%; 
   z-index: 1000; 
-  background: rgba(255, 255, 255, 0.315);
+  background: rgba(255, 255, 255, 0.836);
   backdrop-filter: blur(1px); 
   border-radius: 15px;
   margin-top: 16px;
